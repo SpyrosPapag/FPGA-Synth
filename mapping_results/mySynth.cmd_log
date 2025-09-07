@@ -1,0 +1,177 @@
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project/project_fpga/mySynth.xst" -ofn "E:/CAD/project/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_NEW/project_fpga/mySynth.xst" -ofn "E:/CAD/project_NEW/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_NEW/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 
+xst -intstyle ise -ifn "E:/CAD/project_CAD_experimental/project_fpga/mySynth.xst" -ofn "E:/CAD/project_CAD_experimental/project_fpga/mySynth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/CAD/project_CAD_experimental/src/mySynth.ucf -p xc3s1000-ft256-4 mySynth.ngc mySynth.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o mySynth_map.ncd mySynth.ngd mySynth.pcf 
+par -w -intstyle ise -ol high -t 1 mySynth_map.ncd mySynth.ncd mySynth.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf 
+bitgen -intstyle ise -f mySynth.ut mySynth.ncd 

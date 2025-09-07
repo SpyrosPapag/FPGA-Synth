@@ -1,0 +1,845 @@
+Release 13.1 - xst O.40d (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: mySynth.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mySynth.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mySynth"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : mySynth
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../src/sound_cntrl.v" in library work
+Module <sound_cntrl> compiled
+Module <frequency_generator> compiled
+Compiling verilog file "../src/keyboard_cntrl.v" in library work
+Module <counter> compiled
+Compiling verilog file "../src/display_cntrl.v" in library work
+Module <kbd_protocol> compiled
+Module <display_cntrl> compiled
+Module <disp_out> compiled
+Module <note_mask> compiled
+Module <circle_mask> compiled
+Module <disp_timing> compiled
+Compiling verilog file "../src/mySynth.v" in library work
+Module <disp_counter> compiled
+Module <mySynth> compiled
+Module <cnt2b> compiled
+No errors in compilation
+Analysis of file <"mySynth.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mySynth> in library <work>.
+
+Analyzing hierarchy for module <kbd_protocol> in library <work>.
+
+Analyzing hierarchy for module <sound_cntrl> in library <work>.
+
+Analyzing hierarchy for module <cnt2b> in library <work>.
+
+Analyzing hierarchy for module <display_cntrl> in library <work> with parameters.
+	spacing = "0000011001"
+	thickness = "0000000101"
+	top = "0001100100"
+
+Analyzing hierarchy for module <frequency_generator> in library <work>.
+
+Analyzing hierarchy for module <disp_timing> in library <work>.
+
+Analyzing hierarchy for module <disp_out> in library <work> with parameters.
+	spacing = "0000011001"
+	thickness = "0000000101"
+	top = "0001100100"
+
+Analyzing hierarchy for module <counter> in library <work> with parameters.
+	width = "00000000000000000000000000001010"
+
+Analyzing hierarchy for module <counter> in library <work> with parameters.
+	width = "00000000000000000000000000001000"
+
+Analyzing hierarchy for module <disp_counter> in library <work> with parameters.
+	back = "1011110000"
+	front = "1010000000"
+	per = "1100100000"
+	pls = "1010010000"
+
+Analyzing hierarchy for module <disp_counter> in library <work> with parameters.
+	back = "0110011110"
+	front = "0110010000"
+	per = "0111000001"
+	pls = "0110011100"
+
+Analyzing hierarchy for module <note_mask> in library <work> with parameters.
+	h = "0101000000"
+	h_border = "0000011110"
+	spacing = "0000011001"
+	thickness = "0000000101"
+	top = "0001100100"
+	v_border = "0000111100"
+
+Analyzing hierarchy for module <circle_mask> in library <work> with parameters.
+	h = "0101000000"
+	spacing = "0000011001"
+	thickness = "0000000101"
+	top = "0001100100"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mySynth>.
+Module <mySynth> is correct for synthesis.
+ 
+Analyzing module <kbd_protocol> in library <work>.
+Module <kbd_protocol> is correct for synthesis.
+ 
+Analyzing module <sound_cntrl> in library <work>.
+Module <sound_cntrl> is correct for synthesis.
+ 
+Analyzing module <frequency_generator> in library <work>.
+Module <frequency_generator> is correct for synthesis.
+ 
+Analyzing module <counter.1> in library <work>.
+	width = 32'sb00000000000000000000000000001010
+Module <counter.1> is correct for synthesis.
+ 
+Analyzing module <counter.2> in library <work>.
+	width = 32'sb00000000000000000000000000001000
+Module <counter.2> is correct for synthesis.
+ 
+Analyzing module <cnt2b> in library <work>.
+Module <cnt2b> is correct for synthesis.
+ 
+Analyzing module <display_cntrl> in library <work>.
+	spacing = 10'b0000011001
+	thickness = 10'b0000000101
+	top = 10'b0001100100
+Module <display_cntrl> is correct for synthesis.
+ 
+Analyzing module <disp_timing> in library <work>.
+Module <disp_timing> is correct for synthesis.
+ 
+Analyzing module <disp_counter.1> in library <work>.
+	back = 10'b1011110000
+	front = 10'b1010000000
+	per = 10'b1100100000
+	pls = 10'b1010010000
+Module <disp_counter.1> is correct for synthesis.
+ 
+Analyzing module <disp_counter.2> in library <work>.
+	back = 10'b0110011110
+	front = 10'b0110010000
+	per = 10'b0111000001
+	pls = 10'b0110011100
+Module <disp_counter.2> is correct for synthesis.
+ 
+Analyzing module <disp_out> in library <work>.
+	spacing = 10'b0000011001
+	thickness = 10'b0000000101
+	top = 10'b0001100100
+Module <disp_out> is correct for synthesis.
+ 
+Analyzing module <note_mask> in library <work>.
+	h = 10'sb0101000000
+	h_border = 10'b0000011110
+	spacing = 10'b0000011001
+	thickness = 10'b0000000101
+	top = 10'b0001100100
+	v_border = 10'b0000111100
+Module <note_mask> is correct for synthesis.
+ 
+Analyzing module <circle_mask> in library <work>.
+	h = 10'sb0101000000
+	spacing = 10'b0000011001
+	thickness = 10'b0000000101
+	top = 10'b0001100100
+Module <circle_mask> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <kbd_protocol>.
+    Related source file is "../src/keyboard_cntrl.v".
+    Found 8-bit register for signal <scancode>.
+    Found 4-bit up counter for signal <cnt>.
+    Found 1-bit register for signal <f0>.
+    Found 8-bit register for signal <ps2clksamples>.
+    Found 1-bit xor9 for signal <scancode$xor0000> created at line 39.
+    Found 10-bit register for signal <shift>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <kbd_protocol> synthesized.
+
+
+Synthesizing Unit <cnt2b>.
+    Related source file is "../src/mySynth.v".
+    Found 2-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <cnt2b> synthesized.
+
+
+Synthesizing Unit <counter_1>.
+    Related source file is "../src/sound_cntrl.v".
+    Found 10-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_1> synthesized.
+
+
+Synthesizing Unit <counter_2>.
+    Related source file is "../src/sound_cntrl.v".
+    Found 8-bit comparator equal for signal <clkdiv>.
+    Found 8-bit subtractor for signal <clkdiv$addsub0000> created at line 125.
+    Found 8-bit up counter for signal <cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <counter_2> synthesized.
+
+
+Synthesizing Unit <disp_counter_1>.
+    Related source file is "../src/display_cntrl.v".
+    Found 10-bit comparator less for signal <display>.
+    Found 10-bit comparator greater for signal <pulse$cmp_gt0000> created at line 311.
+    Found 10-bit comparator less for signal <pulse$cmp_lt0000> created at line 311.
+    Found 10-bit up counter for signal <tmp_cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 Comparator(s).
+Unit <disp_counter_1> synthesized.
+
+
+Synthesizing Unit <disp_counter_2>.
+    Related source file is "../src/display_cntrl.v".
+    Found 10-bit comparator less for signal <display>.
+    Found 10-bit comparator greater for signal <pulse$cmp_gt0000> created at line 311.
+    Found 10-bit comparator less for signal <pulse$cmp_lt0000> created at line 311.
+    Found 10-bit up counter for signal <tmp_cnt>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 Comparator(s).
+Unit <disp_counter_2> synthesized.
+
+
+Synthesizing Unit <circle_mask>.
+    Related source file is "../src/display_cntrl.v".
+WARNING:Xst:643 - "../src/display_cntrl.v" line 228: The result of a 10x4-bit multiplication is partially used. Only the 10 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 10-bit adder for signal <v>.
+    Found 22-bit adder for signal <dist>.
+    Found 11x11-bit multiplier for signal <dist$mult0000> created at line 236.
+    Found 11x11-bit multiplier for signal <dist$mult0001> created at line 236.
+    Found 11-bit comparator greatequal for signal <do_note$cmp_ge0000> created at line 241.
+    Found 11-bit comparator greater for signal <do_note$cmp_gt0000> created at line 241.
+    Found 11-bit comparator lessequal for signal <do_note$cmp_le0000> created at line 241.
+    Found 11-bit comparator less for signal <do_note$cmp_lt0000> created at line 241.
+    Found 11-bit subtractor for signal <dx>.
+    Found 11-bit subtractor for signal <dy>.
+    Found 22-bit comparator lessequal for signal <tmp_circle>.
+    Found 10x4-bit multiplier for signal <v$mult0001> created at line 228.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Multiplier(s).
+	inferred   5 Comparator(s).
+Unit <circle_mask> synthesized.
+
+
+Synthesizing Unit <frequency_generator>.
+    Related source file is "../src/sound_cntrl.v".
+Unit <frequency_generator> synthesized.
+
+
+Synthesizing Unit <disp_timing>.
+    Related source file is "../src/display_cntrl.v".
+WARNING:Xst:646 - Signal <py<9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <disp_timing> synthesized.
+
+
+Synthesizing Unit <note_mask>.
+    Related source file is "../src/display_cntrl.v".
+    Found 11-bit subtractor for signal <$sub0000> created at line 187.
+    Found 11-bit subtractor for signal <$sub0001> created at line 187.
+    Found 10-bit comparator greater for signal <borders$cmp_gt0000> created at line 192.
+    Found 11-bit comparator greater for signal <borders$cmp_gt0001> created at line 192.
+    Found 10-bit comparator less for signal <borders$cmp_lt0000> created at line 192.
+    Found 11-bit comparator less for signal <borders$cmp_lt0001> created at line 192.
+    Found 10-bit adder for signal <d_left>.
+    Found 10-bit subtractor for signal <d_left$addsub0000> created at line 179.
+    Found 10-bit adder for signal <d_top>.
+    Found 10-bit subtractor for signal <diag$addsub0000> created at line 182.
+    Found 10-bit adder for signal <diag$addsub0001> created at line 182.
+    Found 10-bit subtractor for signal <diag$addsub0002> created at line 182.
+    Found 10-bit adder for signal <diag$addsub0003> created at line 182.
+    Found 10-bit adder for signal <diag$addsub0004> created at line 182.
+    Found 10-bit adder for signal <diag$addsub0005> created at line 182.
+    Found 10-bit comparator greater for signal <diag$cmp_gt0000> created at line 182.
+    Found 10-bit comparator greater for signal <diag$cmp_gt0001> created at line 182.
+    Found 10-bit comparator less for signal <diag$cmp_lt0000> created at line 182.
+    Found 10-bit comparator less for signal <diag$cmp_lt0001> created at line 182.
+    Found 10-bit subtractor for signal <r_height$sub0000> created at line 167.
+    Found 10-bit comparator greater for signal <rectangle$cmp_gt0000> created at line 171.
+    Found 11-bit comparator greater for signal <rectangle$cmp_gt0001> created at line 171.
+    Found 10-bit comparator less for signal <rectangle$cmp_lt0000> created at line 171.
+    Found 11-bit comparator less for signal <rectangle$cmp_lt0001> created at line 171.
+    Found 10-bit adder for signal <si_d_bot>.
+    Found 10-bit adder for signal <si_d_left>.
+    Found 10-bit adder for signal <si_d_left$addsub0000> created at line 185.
+    Found 10-bit adder for signal <si_diag$addsub0000> created at line 187.
+    Found 10-bit adder for signal <si_diag$addsub0001> created at line 187.
+    Found 10-bit adder for signal <si_diag$addsub0002> created at line 187.
+    Found 11-bit comparator greater for signal <si_diag$cmp_gt0000> created at line 187.
+    Found 10-bit comparator greater for signal <si_diag$cmp_gt0001> created at line 187.
+    Found 11-bit comparator less for signal <si_diag$cmp_lt0000> created at line 187.
+    Found 10-bit comparator less for signal <si_diag$cmp_lt0001> created at line 187.
+    Found 11-bit subtractor for signal <si_diag$sub0000> created at line 187.
+    Found 10-bit adder for signal <si_r_height$add0000> created at line 173.
+    Found 10-bit comparator greater for signal <si_rectangle$cmp_gt0000> created at line 176.
+    Found 11-bit comparator greater for signal <si_rectangle$cmp_gt0001> created at line 176.
+    Found 10-bit comparator less for signal <si_rectangle$cmp_lt0000> created at line 176.
+    Found 11-bit comparator less for signal <si_rectangle$cmp_lt0001> created at line 176.
+    Summary:
+	inferred  20 Adder/Subtractor(s).
+	inferred  20 Comparator(s).
+Unit <note_mask> synthesized.
+
+
+Synthesizing Unit <sound_cntrl>.
+    Related source file is "../src/sound_cntrl.v".
+Unit <sound_cntrl> synthesized.
+
+
+Synthesizing Unit <disp_out>.
+    Related source file is "../src/display_cntrl.v".
+WARNING:Xst:646 - Signal <px> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 11-bit comparator greatequal for signal <pentagram$cmp_ge0000> created at line 66.
+    Found 11-bit comparator greatequal for signal <pentagram$cmp_ge0001> created at line 66.
+    Found 11-bit comparator greatequal for signal <pentagram$cmp_ge0002> created at line 66.
+    Found 11-bit comparator greatequal for signal <pentagram$cmp_ge0003> created at line 66.
+    Found 11-bit comparator greatequal for signal <pentagram$cmp_ge0004> created at line 66.
+    Found 11-bit comparator lessequal for signal <pentagram$cmp_le0000> created at line 66.
+    Found 11-bit comparator lessequal for signal <pentagram$cmp_le0001> created at line 66.
+    Found 11-bit comparator lessequal for signal <pentagram$cmp_le0002> created at line 66.
+    Found 11-bit comparator lessequal for signal <pentagram$cmp_le0003> created at line 66.
+    Found 11-bit comparator lessequal for signal <pentagram$cmp_le0004> created at line 66.
+    Summary:
+	inferred  10 Comparator(s).
+Unit <disp_out> synthesized.
+
+
+Synthesizing Unit <display_cntrl>.
+    Related source file is "../src/display_cntrl.v".
+Unit <display_cntrl> synthesized.
+
+
+Synthesizing Unit <mySynth>.
+    Related source file is "../src/mySynth.v".
+Unit <mySynth> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 9
+ 10x4-bit multiplier                                   : 3
+ 11x11-bit multiplier                                  : 6
+# Adders/Subtractors                                   : 44
+ 10-bit adder                                          : 16
+ 10-bit subtractor                                     : 4
+ 11-bit subtractor                                     : 9
+ 22-bit adder                                          : 3
+ 8-bit subtractor                                      : 12
+# Counters                                             : 17
+ 10-bit up counter                                     : 3
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 12
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 10-bit register                                       : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 63
+ 10-bit comparator greater                             : 8
+ 10-bit comparator less                                : 10
+ 11-bit comparator greatequal                          : 8
+ 11-bit comparator greater                             : 7
+ 11-bit comparator less                                : 7
+ 11-bit comparator lessequal                           : 8
+ 22-bit comparator lessequal                           : 3
+ 8-bit comparator equal                                : 12
+# Xors                                                 : 1
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 9
+ 10x4-bit multiplier                                   : 3
+ 11x11-bit multiplier                                  : 6
+# Adders/Subtractors                                   : 44
+ 10-bit adder                                          : 16
+ 10-bit subtractor                                     : 4
+ 11-bit subtractor                                     : 9
+ 22-bit adder                                          : 3
+ 8-bit subtractor                                      : 12
+# Counters                                             : 17
+ 10-bit up counter                                     : 3
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 12
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 63
+ 10-bit comparator greater                             : 8
+ 10-bit comparator less                                : 10
+ 11-bit comparator greatequal                          : 8
+ 11-bit comparator greater                             : 7
+ 11-bit comparator less                                : 7
+ 11-bit comparator lessequal                           : 8
+ 22-bit comparator lessequal                           : 3
+ 8-bit comparator equal                                : 12
+# Xors                                                 : 1
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mySynth> ...
+
+Optimizing unit <kbd_protocol> ...
+
+Optimizing unit <frequency_generator> ...
+
+Optimizing unit <note_mask> ...
+
+Optimizing unit <sound_cntrl> ...
+
+Optimizing unit <disp_out> ...
+
+Optimizing unit <display_cntrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mySynth, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 159
+ Flip-Flops                                            : 159
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mySynth.ngr
+Top Level Output File Name         : mySynth
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 1491
+#      GND                         : 1
+#      INV                         : 53
+#      LUT1                        : 95
+#      LUT2                        : 225
+#      LUT2_D                      : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 103
+#      LUT4                        : 226
+#      LUT4_D                      : 19
+#      LUT4_L                      : 1
+#      MULT_AND                    : 6
+#      MUXCY                       : 432
+#      MUXF5                       : 18
+#      VCC                         : 1
+#      XORCY                       : 307
+# FlipFlops/Latches                : 159
+#      FDC                         : 30
+#      FDCE                        : 129
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 15
+#      IBUF                        : 3
+#      OBUF                        : 12
+# MULTs                            : 6
+#      MULT18X18                   : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                      396  out of   7680     5%  
+ Number of Slice Flip Flops:            159  out of  15360     1%  
+ Number of 4 input LUTs:                726  out of  15360     4%  
+ Number of IOs:                          16
+ Number of bonded IOBs:                  16  out of    173     9%  
+ Number of MULT18X18s:                    6  out of     24    25%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+--------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                      | Load  |
+-----------------------------------+--------------------------------------------+-------+
+sysclk                             | BUFGP                                      | 139   |
+pxlclk1(pxlclk_gen/clkdiv41:O)     | BUFG(*)(disp_hndlr/timing/pxlcnt/tmp_cnt_9)| 20    |
+-----------------------------------+--------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 159   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.412ns (Maximum Frequency: 134.916MHz)
+   Minimum input arrival time before clock: 6.916ns
+   Maximum output required time after clock: 39.400ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sysclk'
+  Clock period: 7.412ns (frequency: 134.916MHz)
+  Total number of paths / destination ports: 4637 / 256
+-------------------------------------------------------------------------
+Delay:               7.412ns (Levels of Logic = 3)
+  Source:            kbd_in/ps2clksamples_7 (FF)
+  Destination:       kbd_in/shift_9 (FF)
+  Source Clock:      sysclk rising
+  Destination Clock: sysclk rising
+
+  Data Path: kbd_in/ps2clksamples_7 to kbd_in/shift_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   1.140  kbd_in/ps2clksamples_7 (kbd_in/ps2clksamples_7)
+     LUT4:I0->O            2   0.551   1.216  kbd_in/f0_not0001219 (kbd_in/f0_not0001219)
+     LUT2:I0->O            5   0.551   0.947  kbd_in/f0_not0001220 (kbd_in/fall_edge)
+     LUT4:I3->O           10   0.551   1.134  kbd_in/shift_not0001 (kbd_in/shift_not0001)
+     FDCE:CE                   0.602          kbd_in/shift_0
+    ----------------------------------------
+    Total                      7.412ns (2.975ns logic, 4.437ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pxlclk1'
+  Clock period: 6.856ns (frequency: 145.858MHz)
+  Total number of paths / destination ports: 410 / 30
+-------------------------------------------------------------------------
+Delay:               6.856ns (Levels of Logic = 11)
+  Source:            disp_hndlr/timing/rowcnt/tmp_cnt_1 (FF)
+  Destination:       disp_hndlr/timing/rowcnt/tmp_cnt_9 (FF)
+  Source Clock:      pxlclk1 rising
+  Destination Clock: pxlclk1 rising
+
+  Data Path: disp_hndlr/timing/rowcnt/tmp_cnt_1 to disp_hndlr/timing/rowcnt/tmp_cnt_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            25   0.720   2.152  disp_hndlr/timing/rowcnt/tmp_cnt_1 (disp_hndlr/timing/rowcnt/tmp_cnt_1)
+     LUT1:I0->O            1   0.551   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<1>_rt (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<1> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<2> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<3> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<4> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<5> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<6> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<7> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<7>)
+     MUXCY:CI->O           0   0.064   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<8> (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_cy<8>)
+     XORCY:CI->O           1   0.904   0.827  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_xor<9> (disp_hndlr/Result<9>)
+     LUT4:I3->O            1   0.551   0.000  disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_eqn_91 (disp_hndlr/timing/rowcnt/Mcount_tmp_cnt_eqn_9)
+     FDCE:D                    0.203          disp_hndlr/timing/rowcnt/tmp_cnt_9
+    ----------------------------------------
+    Total                      6.856ns (3.877ns logic, 2.979ns route)
+                                       (56.5% logic, 43.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sysclk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              6.916ns (Levels of Logic = 4)
+  Source:            ps2data (PAD)
+  Destination:       kbd_in/f0 (FF)
+  Destination Clock: sysclk rising
+
+  Data Path: ps2data to kbd_in/f0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.821   1.216  ps2data_IBUF (ps2data_IBUF)
+     LUT4:I0->O            1   0.551   0.996  kbd_in/f0_not0001334 (kbd_in/f0_not0001334)
+     LUT4_D:I1->O          1   0.551   0.827  kbd_in/f0_not0001344 (kbd_in/f0_not0001344)
+     LUT4:I3->O            1   0.551   0.801  kbd_in/f0_not000139 (kbd_in/f0_not0001)
+     FDCE:CE                   0.602          kbd_in/f0
+    ----------------------------------------
+    Total                      6.916ns (3.076ns logic, 3.840ns route)
+                                       (44.5% logic, 55.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sysclk'
+  Total number of paths / destination ports: 63268907 / 10
+-------------------------------------------------------------------------
+Offset:              39.400ns (Levels of Logic = 27)
+  Source:            kbd_in/scancode_4 (FF)
+  Destination:       RGB<8> (PAD)
+  Source Clock:      sysclk rising
+
+  Data Path: kbd_in/scancode_4 to RGB<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            21   0.720   1.854  kbd_in/scancode_4 (kbd_in/scancode_4)
+     LUT4:I0->O            1   0.551   0.000  disp_hndlr/out/note<2>231 (disp_hndlr/out/note<2>231)
+     MUXF5:I1->O           1   0.360   1.140  disp_hndlr/out/note<2>23_f5 (disp_hndlr/out/note<2>23)
+     LUT3:I0->O            1   0.551   0.000  disp_hndlr/out/note<2>112_G (N144)
+     MUXF5:I1->O          15   0.360   1.527  disp_hndlr/out/note<2>112 (disp_hndlr/out/note<2>112)
+     LUT2:I0->O           39   0.551   2.232  disp_hndlr/out/note<2>125 (disp_hndlr/out/note<2>)
+     LUT4:I0->O            3   0.551   1.102  disp_hndlr/out/masks/Madd_si_d_left_addsub0000_lut<4>1 (disp_hndlr/out/masks/Madd_si_d_left_addsub0000_lut<4>)
+     LUT2:I1->O            1   0.551   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_lut<4> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_lut<4>)
+     MUXCY:S->O            1   0.500   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<4> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<5> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<6> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<7> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<8> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<8>)
+     MUXCY:CI->O           0   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<9> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<9>)
+     XORCY:CI->O          16   0.904   1.237  disp_hndlr/out/masks/base_circle_mask/Msub_dy_xor<10> (disp_hndlr/out/masks/base_circle_mask/dy<10>)
+     MULT18X18:A10->P19    1   4.001   0.996  disp_hndlr/out/masks/base_circle_mask/Mmult_dist_mult0001 (disp_hndlr/out/masks/base_circle_mask/dist_mult0001<19>)
+     LUT2:I1->O            1   0.551   0.000  disp_hndlr/out/masks/base_circle_mask/Madd_dist_lut<19> (disp_hndlr/out/masks/base_circle_mask/Madd_dist_lut<19>)
+     MUXCY:S->O            1   0.500   0.000  disp_hndlr/out/masks/base_circle_mask/Madd_dist_cy<19> (disp_hndlr/out/masks/base_circle_mask/Madd_dist_cy<19>)
+     XORCY:CI->O           1   0.904   1.140  disp_hndlr/out/masks/base_circle_mask/Madd_dist_xor<20> (disp_hndlr/out/masks/base_circle_mask/dist<20>)
+     LUT2:I0->O            1   0.551   0.000  disp_hndlr/out/masks/base_circle_mask/Mcompar_tmp_circle_lut<6> (disp_hndlr/out/masks/base_circle_mask/Mcompar_tmp_circle_lut<6>)
+     MUXCY:S->O            2   0.739   1.216  disp_hndlr/out/masks/base_circle_mask/Mcompar_tmp_circle_cy<6> (disp_hndlr/out/masks/base_circle_mask/tmp_circle)
+     LUT3:I0->O            2   0.551   1.216  disp_hndlr/out/masks/mask<1>311 (disp_hndlr/out/masks/N45)
+     LUT3:I0->O            1   0.551   0.000  disp_hndlr/out/masks/mask<1>225_G (N148)
+     MUXF5:I1->O           1   0.360   0.996  disp_hndlr/out/masks/mask<1>225 (disp_hndlr/out/masks/mask<1>225)
+     LUT3:I1->O            1   0.551   0.869  disp_hndlr/out/masks/mask<1>252 (disp_hndlr/out/masks/mask<1>252)
+     LUT4:I2->O            1   0.551   0.827  disp_hndlr/RGB<8>1_SW0 (N63)
+     LUT4:I3->O            9   0.551   1.124  disp_hndlr/RGB<8>1 (RGB_0_OBUF)
+     OBUF:I->O                 5.644          RGB_0_OBUF (RGB<0>)
+    ----------------------------------------
+    Total                     39.400ns (21.924ns logic, 17.476ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pxlclk1'
+  Total number of paths / destination ports: 3060236 / 11
+-------------------------------------------------------------------------
+Offset:              30.924ns (Levels of Logic = 23)
+  Source:            disp_hndlr/timing/rowcnt/tmp_cnt_2 (FF)
+  Destination:       RGB<8> (PAD)
+  Source Clock:      pxlclk1 rising
+
+  Data Path: disp_hndlr/timing/rowcnt/tmp_cnt_2 to RGB<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            29   0.720   2.175  disp_hndlr/timing/rowcnt/tmp_cnt_2 (disp_hndlr/timing/rowcnt/tmp_cnt_2)
+     LUT2:I0->O            1   0.551   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_lut<2> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_lut<2>)
+     MUXCY:S->O            1   0.500   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<2> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<3> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<4> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<5> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<6> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<7> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<8> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<8>)
+     MUXCY:CI->O           0   0.064   0.000  disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<9> (disp_hndlr/out/masks/base_circle_mask/Msub_dy_cy<9>)
+     XORCY:CI->O          16   0.904   1.237  disp_hndlr/out/masks/base_circle_mask/Msub_dy_xor<10> (disp_hndlr/out/masks/base_circle_mask/dy<10>)
+     MULT18X18:A10->P19    1   4.001   0.996  disp_hndlr/out/masks/base_circle_mask/Mmult_dist_mult0001 (disp_hndlr/out/masks/base_circle_mask/dist_mult0001<19>)
+     LUT2:I1->O            1   0.551   0.000  disp_hndlr/out/masks/base_circle_mask/Madd_dist_lut<19> (disp_hndlr/out/masks/base_circle_mask/Madd_dist_lut<19>)
+     MUXCY:S->O            1   0.500   0.000  disp_hndlr/out/masks/base_circle_mask/Madd_dist_cy<19> (disp_hndlr/out/masks/base_circle_mask/Madd_dist_cy<19>)
+     XORCY:CI->O           1   0.904   1.140  disp_hndlr/out/masks/base_circle_mask/Madd_dist_xor<20> (disp_hndlr/out/masks/base_circle_mask/dist<20>)
+     LUT2:I0->O            1   0.551   0.000  disp_hndlr/out/masks/base_circle_mask/Mcompar_tmp_circle_lut<6> (disp_hndlr/out/masks/base_circle_mask/Mcompar_tmp_circle_lut<6>)
+     MUXCY:S->O            2   0.739   1.216  disp_hndlr/out/masks/base_circle_mask/Mcompar_tmp_circle_cy<6> (disp_hndlr/out/masks/base_circle_mask/tmp_circle)
+     LUT3:I0->O            2   0.551   1.216  disp_hndlr/out/masks/mask<1>311 (disp_hndlr/out/masks/N45)
+     LUT3:I0->O            1   0.551   0.000  disp_hndlr/out/masks/mask<1>225_G (N148)
+     MUXF5:I1->O           1   0.360   0.996  disp_hndlr/out/masks/mask<1>225 (disp_hndlr/out/masks/mask<1>225)
+     LUT3:I1->O            1   0.551   0.869  disp_hndlr/out/masks/mask<1>252 (disp_hndlr/out/masks/mask<1>252)
+     LUT4:I2->O            1   0.551   0.827  disp_hndlr/RGB<8>1_SW0 (N63)
+     LUT4:I3->O            9   0.551   1.124  disp_hndlr/RGB<8>1 (RGB_0_OBUF)
+     OBUF:I->O                 5.644          RGB_0_OBUF (RGB<0>)
+    ----------------------------------------
+    Total                     30.924ns (19.128ns logic, 11.796ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 27.00 secs
+Total CPU time to Xst completion: 27.06 secs
+ 
+--> 
+
+Total memory usage is 144984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

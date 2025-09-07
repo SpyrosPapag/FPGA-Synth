@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map O.40d on Fri May 15 11:38:31 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "PWM" LOCATE = SITE "M3" LEVEL 1;
+COMP "ps2data" LOCATE = SITE "E13" LEVEL 1;
+COMP "reset" LOCATE = SITE "K4" LEVEL 1;
+COMP "RGB<0>" LOCATE = SITE "C9" LEVEL 1;
+COMP "RGB<1>" LOCATE = SITE "E7" LEVEL 1;
+COMP "RGB<2>" LOCATE = SITE "D5" LEVEL 1;
+COMP "RGB<3>" LOCATE = SITE "A8" LEVEL 1;
+COMP "RGB<4>" LOCATE = SITE "A5" LEVEL 1;
+COMP "RGB<5>" LOCATE = SITE "C3" LEVEL 1;
+COMP "RGB<6>" LOCATE = SITE "C8" LEVEL 1;
+COMP "RGB<7>" LOCATE = SITE "D6" LEVEL 1;
+COMP "RGB<8>" LOCATE = SITE "B1" LEVEL 1;
+COMP "H_SYNC" LOCATE = SITE "B7" LEVEL 1;
+COMP "V_SYNC" LOCATE = SITE "D8" LEVEL 1;
+COMP "ps2clk" LOCATE = SITE "B16" LEVEL 1;
+COMP "sysclk" LOCATE = SITE "T9" LEVEL 1;
+NET "sysclk_BUFGP/IBUFG" BEL "sysclk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

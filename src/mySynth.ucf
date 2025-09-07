@@ -1,0 +1,16 @@
+net reset loc=k4;
+net sysclk loc=t9;
+net ps2clk loc=b16;
+net ps2data loc=e13;
+net H_SYNC loc=b7;
+net V_SYNC loc=d8;
+net PWM loc=m3;
+net RGB<8> loc=b1;
+net RGB<7> loc=d6;
+net RGB<6> loc=c8;
+net RGB<5> loc=c3;
+net RGB<4> loc=a5;
+net RGB<3> loc=a8;
+net RGB<2> loc=d5;
+net RGB<1> loc=e7;
+net RGB<0> loc=c9;

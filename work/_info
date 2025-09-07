@@ -1,0 +1,284 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Spyros/Desktop/sim_src
+vcircle_mask
+Z0 !s110 1747235385
+!i10b 1
+!s100 mNKPgVli^REgnz1g7zfC[2
+I^m2UKi::5UZFk;_]69P:b1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Spyros/Desktop/project
+Z3 w1747232761
+Z4 8./src/display_cntrl.v
+Z5 F./src/display_cntrl.v
+L0 215
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1747235385.000000
+Z8 !s107 ./src/display_cntrl.v|
+Z9 !s90 -reportprogress|300|-work|work|./src/display_cntrl.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcnt2b
+Z12 !s110 1747235516
+!i10b 1
+!s100 A9lXn:We>jY3SKiPB5Z832
+I>6Fjl33Qz;1F9[;SA9?bb3
+R1
+R2
+Z13 w1746979316
+Z14 8./src/mySynth.v
+Z15 F./src/mySynth.v
+L0 52
+R6
+r1
+!s85 0
+31
+Z16 !s108 1747235516.000000
+Z17 !s107 ./src/mySynth.v|
+Z18 !s90 -reportprogress|300|-work|work|./src/mySynth.v|
+!i113 1
+R10
+R11
+vcounter
+Z19 !s110 1747236164
+!i10b 1
+!s100 @VIUBX[mkbmNOcYLQ1PSX3
+IM2P[8<DO[F`AMZ]?7V02h3
+R1
+R2
+Z20 w1747236159
+Z21 8./src/sound_cntrl.v
+Z22 F./src/sound_cntrl.v
+L0 99
+R6
+r1
+!s85 0
+31
+Z23 !s108 1747236164.000000
+Z24 !s107 ./src/sound_cntrl.v|
+Z25 !s90 -reportprogress|300|-work|work|./src/sound_cntrl.v|
+!i113 1
+R10
+R11
+vdisp_counter
+R0
+!i10b 1
+!s100 b0UTXHNRDFSYWcE6K7EHo2
+IjVcG7YUfBMYMnmVl=9HM[2
+R1
+R2
+R3
+R4
+R5
+L0 297
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdisp_out
+R0
+!i10b 1
+!s100 :<UUDEYKVc`>Q_i17EJ>80
+I73Kf?aB9=SXOZ3dBaC=Gd3
+R1
+R2
+R3
+R4
+R5
+L0 50
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdisp_timing
+R0
+!i10b 1
+!s100 GhEBPCa34BHakfZGFW2Rg1
+Ic4lVO4`UbFH?M8[GAzReL2
+R1
+R2
+R3
+R4
+R5
+L0 246
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vdisplay_cntrl
+R0
+!i10b 1
+!s100 03Jm8?b7RCieD8<:486RS3
+I55d<`2e1RMCX:of7KbWRn0
+R1
+R2
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vfrequency_generator
+R19
+!i10b 1
+!s100 ;<^nzGIGnL@aOnM3giUk@3
+IA1<RWgEFSdF>m796W?VP83
+R1
+R2
+R20
+R21
+R22
+L0 30
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+R11
+vmySynth
+R12
+!i10b 1
+!s100 4]Nh<SNQ4BJV2]dF@cO0o3
+I0J7dlGVNi1bU6TX6lH<dG0
+R1
+R2
+R13
+R14
+R15
+L0 1
+R6
+r1
+!s85 0
+31
+R16
+R17
+R18
+!i113 1
+R10
+R11
+nmy@synth
+vnote_mask
+R0
+!i10b 1
+!s100 `>J9;kS5508PW<<VE;C?<2
+I1`VzP4@EAh2IWI42KB@h10
+R1
+R2
+R3
+R4
+R5
+L0 103
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vsound_cntrl
+R19
+!i10b 1
+!s100 CFM^X`4j`XgCbZaU]>HZ21
+I>VPZQl3gl>FbKmk]:fNcV0
+R1
+R2
+R20
+R21
+R22
+L0 1
+R6
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R10
+R11
+vtb_display_cntrl
+Z26 !s110 1746896844
+!i10b 1
+!s100 [iQn_Ph2=?z3e`oPkCOMY2
+ITnC38oO=W?J4P7ib2RN:g3
+R1
+R2
+Z27 w1746886784
+Z28 8./src/display_tb.v
+Z29 F./src/display_tb.v
+L0 3
+R6
+r1
+!s85 0
+31
+Z30 !s108 1746896844.000000
+Z31 !s107 ./src/display_tb.v|./src/display_cntrl.v|
+Z32 !s90 -reportprogress|300|-work|work|./src/display_cntrl.v|./src/display_tb.v|
+!i113 1
+R10
+R11
+vtiming_tb
+R26
+!i10b 1
+!s100 c>_TUB1ZhR`RkiGKYAe1L1
+I6l9N>A9HlMI]aZJU1]RaA1
+R1
+R2
+R27
+R28
+R29
+L0 115
+R6
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 1
+R10
+R11

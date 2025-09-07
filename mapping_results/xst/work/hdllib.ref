@@ -1,0 +1,14 @@
+MO sound_cntrl NULL ../src/sound_cntrl.v vlg63/sound__cntrl.bin 1589531834
+MO frequency_generator NULL ../src/sound_cntrl.v vlg78/frequency__generator.bin 1589531834
+MO kbd_protocol NULL ../src/keyboard_cntrl.v vlg7A/kbd__protocol.bin 1589531834
+MO kbd_protocol_ready NULL ../src/keyboard_cntrl.v vlg7E/kbd__protocol__ready.bin 1588932157
+MO cnt1000 NULL ../src/sound_cntrl.v vlg32/cnt1000.bin 1589200519
+MO display_cntrl NULL ../src/display_cntrl.v vlg1C/display__cntrl.bin 1589531834
+MO disp_out NULL ../src/display_cntrl.v vlg7B/disp__out.bin 1589531834
+MO counter NULL ../src/sound_cntrl.v vlg10/counter.bin 1589531834
+MO mySynth NULL ../src/mySynth.v vlg04/my_synth.bin 1589531834
+MO cnt2b NULL ../src/mySynth.v vlg19/cnt2b.bin 1589531834
+MO circle_mask NULL ../src/display_cntrl.v vlg51/circle__mask.bin 1589531834
+MO disp_counter NULL ../src/display_cntrl.v vlg07/disp__counter.bin 1589531834
+MO disp_timing NULL ../src/display_cntrl.v vlg2F/disp__timing.bin 1589531834
+MO note_mask NULL ../src/display_cntrl.v vlg79/note__mask.bin 1589531834

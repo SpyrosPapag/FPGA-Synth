@@ -1,0 +1,4 @@
+verilog work "../src/sound_cntrl.v"
+verilog work "../src/keyboard_cntrl.v"
+verilog work "../src/display_cntrl.v"
+verilog work "../src/mySynth.v"

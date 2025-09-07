@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------
+Release 13.1 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.1\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml mySynth.twx mySynth.ncd -o mySynth.twr mySynth.pcf
+
+Design file:              mySynth.ncd
+Physical constraint file: mySynth.pcf
+Device,package,speed:     xc3s1000,ft256,-4 (PRODUCTION 1.39 2011-02-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sysclk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ps2clk      |    3.278(R)|   -1.417(R)|sysclk_BUFGP      |   0.000|
+ps2data     |    9.281(R)|   -1.970(R)|sysclk_BUFGP      |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock sysclk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+PWM         |   19.751(R)|sysclk_BUFGP      |   0.000|
+RGB<0>      |   48.650(R)|sysclk_BUFGP      |   0.000|
+RGB<1>      |   49.062(R)|sysclk_BUFGP      |   0.000|
+RGB<2>      |   50.439(R)|sysclk_BUFGP      |   0.000|
+RGB<3>      |   49.431(R)|sysclk_BUFGP      |   0.000|
+RGB<4>      |   49.748(R)|sysclk_BUFGP      |   0.000|
+RGB<5>      |   53.106(R)|sysclk_BUFGP      |   0.000|
+RGB<6>      |   49.081(R)|sysclk_BUFGP      |   0.000|
+RGB<7>      |   49.748(R)|sysclk_BUFGP      |   0.000|
+RGB<8>      |   52.769(R)|sysclk_BUFGP      |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sysclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysclk         |    7.035|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri May 15 11:39:38 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 92 MB
+
+
+
