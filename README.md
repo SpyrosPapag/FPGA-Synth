@@ -13,7 +13,7 @@ The objective is to implement a synthesizer for playing basic notes and displayi
 *	Display controller is responsible for the monitor timing and actual display.
 *	Sound Controller is responsible for generating of the right note for the piezoelectric speaker.
   
-After writing the code and simulating it with ModelSim, the circuit was mapped to the FPGA with Xilinx ISE.
+After writing the code and simulating it with ModelSim(used TCL scripts for automations), the circuit was mapped to the FPGA(Spartan 3 XC3S1000) with Xilinx ISE.
 
 ## Solution
 
